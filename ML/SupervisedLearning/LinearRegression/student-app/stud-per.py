@@ -49,10 +49,10 @@ def main():
     load_dotenv()
 
     predictor = StudentPerformancePredictor(
-        model_path=os.getenv('MODEL_PATH', 'student_lr_final_model.pkl'),
+        model_path=os.getenv('MODEL_PATH'),
         mongo_uri=os.getenv('MONGO_URI'),
-        db_name=os.getenv('DB_NAME', 'student'),
-        collection_name=os.getenv('COLLECTION_NAME', 'student_perd')
+        db_name=os.getenv('DB_NAME'),
+        collection_name=os.getenv('COLLECTION_NAME')
     )
 
     st.title("Student Performance Prediction")

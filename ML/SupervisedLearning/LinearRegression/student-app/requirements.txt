@@ -1,2 +1,6 @@
 scikit-learn
 pymongo
+streamlit
+pandas
+numpy
+python-dotenv
